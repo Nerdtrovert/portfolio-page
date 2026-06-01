@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prajwal Navada G P | Portfolio</title>
+    <title>Prajwal Navada G P | Full-Stack & Edge AI Developer</title>
+    <meta name="description"
+        content="Prajwal Navada G P - Full-Stack + Edge AI Developer building scalable software and intelligent embedded systems." />
+
+    <meta property="og:title" content="Prajwal Navada G P | Full-Stack & Edge AI Developer" />
+    <meta property="og:description"
+        content="Full-Stack + Edge AI Developer building scalable software and intelligent embedded systems." />
+    <meta property="og:image" content="profile.jpg" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" type="image/png" href="7867852.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet" />
@@ -16,337 +23,282 @@
 
 <body>
     <div class="page-shell">
-        <header class="site-header">
-            <nav class="navbar">
-                <a href="#home" class="logo">
-                    <span class="logo-mark">PN</span>
-                    <span class="logo-text">Prajwal Navada G P</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
 
-            <section id="home" class="hero">
-                <div class="hero-copy">
-                    <p class="eyebrow">Computer Science Student | Builder | Problem Solver</p>
-                    <h1>Designing clean web experiences and building projects that solve real problems.</h1>
-                    <p class="hero-description">
-                        I'm Prajwal, a CSE student focused on full-stack development, strong fundamentals,
-                        and projects that turn ideas into usable products.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">See My Work</a>
-                        <a href="Prajwal_Navada_Resume_ATS.pdf" class="btn btn-secondary" target="_blank"
-                            rel="noreferrer">Download Resume</a>
-                    </div>
-                    <div class="quick-points">
-                        <span>3+ full-stack projects shipped</span>
-                        <span>Real-time multiplayer built</span>
-                        <span>9.2 CGPA</span>
-                    </div>
-                    <div class="hero-metrics">
-                        <div class="metric-card">
-                            <span class="metric-value">3+</span>
-                            <span class="metric-label">Full-stack projects</span>
-                        </div>
-                        <div class="metric-card">
-                            <span class="metric-value">10</span>
-                            <span class="metric-label">Table DB schema designed</span>
-                        </div>
-                        <div class="metric-card">
-                            <span class="metric-value">9.2</span>
-                            <span class="metric-label">Current CGPA</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <span class="logo-mark">PN</span>
+                <span class="logo-text">Prajwal Navada</span>
+            </a>
 
-                <div class="hero-visual">
-                    <div class="profile-frame">
-                        <img src="profile.jpg" alt="Portrait of Prajwal Navada G P" />
-                    </div>
-                    <div class="floating-panel panel-top">
-                        <span>Stack</span>
-                        <strong>React · Node.js · MySQL · Socket.io · Firebase</strong>
-                    </div>
-                    <div class="floating-panel panel-bottom">
-                        <span>Currently levelling up</span>
-                        <strong>DSA · System Design · Backend</strong>
-                    </div>
-                </div>
-            </section>
-        </header>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <main>
-            <section class="section spotlight-section">
-                <div class="spotlight-grid">
-                    <article class="spotlight-card">
-                        <span class="spotlight-label">Why recruiters notice</span>
-                        <h3>Projects that go beyond static demos</h3>
-                        <p>
-                            My work includes real-time socket systems, role-based access control, normalized database
-                            schemas,
-                            JWT authentication flows, Firebase push notifications, and product-focused interfaces built
-                            end to end.
-                        </p>
-                    </article>
-                    <article class="spotlight-card">
-                        <span class="spotlight-label">Current edge</span>
-                        <h3>Full-stack builder in second year of college</h3>
-                        <p>
-                            Shipping production-grade projects with React, Node.js, MySQL, Firebase and
-                            Socket.io while maintaining a 9.2 CGPA.
-                        </p>
-                    </article>
-                    <article class="spotlight-card">
-                        <span class="spotlight-label">Looking for</span>
-                        <h3>Internship and growth opportunities</h3>
-                        <p>
-                            Open to roles where I can contribute real code, learn fast, and turn strong
-                            engineering fundamentals into production-ready impact.
-                        </p>
-                    </article>
-                </div>
-            </section>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
 
-            <section id="about" class="section">
-                <div class="section-heading">
-                    <p class="section-tag">About</p>
-                    <h2>Building with consistency, curiosity, and a strong engineering base.</h2>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <div class="availability-badge">
+                    <span>●</span> Open to Full-Stack, IoT & Edge AI Internships 2026
                 </div>
-                <div class="about-grid">
-                    <div class="info-card">
-                        <p>
-                            I'm a second-year Computer Science Engineering student who enjoys solving
-                            problems, learning modern development tools, and building projects that are
-                            practical and polished.
-                        </p>
-                    </div>
-                    <div class="info-card">
-                        <p>
-                            My current focus is on full-stack development, backend architecture, and
-                            shipping portfolio-worthy projects that show both technical depth and
-                            product thinking.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="education" class="section">
-                <div class="section-heading">
-                    <p class="section-tag">Education</p>
-                    <h2>Academic foundation with a strong focus on growth.</h2>
-                </div>
-                <div class="timeline-card">
-                    <div>
-                        <p class="timeline-label">Bachelor of Engineering in Computer Science & Engineering</p>
-                        <h3>Dr. H.N. National College of Engineering, Bengaluru</h3>
-                        <p style="margin-top:0.4rem; font-size:0.9rem; opacity:0.75;">Visvesvaraya Technological
-                            University</p>
-                    </div>
-                    <div class="timeline-meta">
-                        <span>2024 – 2028</span>
-                        <span>CGPA: 9.2</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="section">
-                <div class="section-heading">
-                    <p class="section-tag">Skills</p>
-                    <h2>Technologies I build with.</h2>
-                </div>
-                <div class="skill-categories">
-                    <div class="skill-group">
-                        <p class="skill-group-label">Languages</p>
-                        <div class="skill-list">
-                            <span>Java</span>
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                            <span>C</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <p class="skill-group-label">Frontend</p>
-                        <div class="skill-list">
-                            <span>React</span>
-                            <span>Vite</span>
-                            <span>PWA (Workbox)</span>
-                            <span>FullCalendar.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <p class="skill-group-label">Backend</p>
-                        <div class="skill-list">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>Spring Boot</span>
-                            <span>Socket.io</span>
-                            <span>REST APIs</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <p class="skill-group-label">Data &amp; Cloud</p>
-                        <div class="skill-list">
-                            <span>MySQL</span>
-                            <span>Firebase FCM</span>
-                            <span>Google Drive API</span>
-                            <span>Nodemailer</span>
-                            <span>JWT</span>
-                            <span>Git &amp; GitHub</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <p class="skill-group-label">Concepts</p>
-                        <div class="skill-list">
-                            <span>OOP</span>
-                            <span>Role-Based Access Control</span>
-                            <span>Database Design</span>
-                            <span>Real-Time Systems</span>
-                            <span>Agile</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="interests" class="section">
-                <div class="section-heading">
-                    <p class="section-tag">Interests</p>
-                    <h2>What I enjoy exploring beyond the classroom.</h2>
-                </div>
-                <div class="skill-list">
-                    <span>Full-Stack Development</span>
-                    <span>Backend Systems</span>
-                    <span>Real-Time Apps</span>
-                    <span>Problem Solving</span>
-                    <span>Database Design</span>
-                    <span>System Design</span>
-                    <span>Cybersecurity Basics</span>
-                    <span>Hackathons</span>
-                </div>
-            </section>
-
-            <section id="projects" class="section">
-                <div class="section-heading">
-                    <p class="section-tag">Projects</p>
-                    <h2>Built from scratch — real stack, real problems.</h2>
-                </div>
-                <div class="project-grid">
-
-                    <article class="project-card featured-project">
-                        <div class="project-topline">
-                            <span class="project-badge">Featured</span>
-                            <span class="project-stack">React · Vite · Node.js · Express · MySQL · Firebase FCM ·
-                                PWA</span>
-                        </div>
-                        <h3>Auditorium Booking System</h3>
-                        <p class="project-desc">Role-based booking platform for 3 colleges replacing manual processes.
-                            Handles end-to-end requests, approvals, rejections, and conflict detection with real-time
-                            dual notifications (email + Firebase push), automated daily cron jobs, role-scoped PDF/Excel
-                            exports, secure file uploads, and PWA support for a native-like experience.</p>
-                        <a href="https://github.com/Nerdtrovert" target="_blank" rel="noreferrer">View on GitHub →</a>
-                    </article>
-
-                    <article class="project-card featured-project">
-                        <div class="project-topline">
-                            <span class="project-badge">Real-Time</span>
-                            <span class="project-stack">React · Node.js · MySQL · Socket.IO · JWT</span>
-                        </div>
-                        <h3>QuizLive — Real-Time Quiz Platform</h3>
-                        <p class="project-desc">Live multiplayer quiz rooms with sub-second updates using Socket.io for
-                            concurrent players. Features a 10-table normalized MySQL schema, streak multiplier scoring,
-                            real-time leaderboard, JWT authentication, and anti-cheat mechanisms (tab switch/focus loss
-                            detection).</p>
-                        <a href="https://github.com/Nerdtrovert/quiz-platform" target="_blank" rel="noreferrer">View on
-                            GitHub →</a>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-topline">
-                            <span class="project-badge">Full-Stack</span>
-                            <span class="project-stack">React · Vite · Node.js · Express · Google Drive API</span>
-                        </div>
-                        <h3>Smart Study — Study Material Portal</h3>
-                        <p class="project-desc">Subject-wise notes and PYQ portal with search and category filtering,
-                            materials served via Google Drive. Features a catalog recovery system that auto-rebuilds the
-                            full index from Drive metadata after data loss — no manual re-upload. Deployed on Render
-                            with an admin dashboard for live JSON snapshots and protected downloads.</p>
-                        <a href="https://github.com/Nerdtrovert" target="_blank" rel="noreferrer">Open Repository →</a>
-                    </article>
-
-
-                </div>
-                <p class="project-note">
-                    Explore more on
-                    <a href="https://github.com/Nerdtrovert/" target="_blank"
-                        rel="noreferrer">github.com/Nerdtrovert</a>.
+                <p class="eyebrow">Full-Stack + Edge AI Developer</p>
+                <h1>Building fast, scalable software and intelligent Edge AI systems.</h1>
+                <p class="hero-description">
+                    Second-year CSE student (CGPA 9.2) with shipped projects across
+                    real-time web systems, full-stack applications,
+                    and TinyML-powered IoT solutions.
                 </p>
-            </section>
-
-            <section id="achievements" class="section">
-                <div class="section-heading">
-                    <p class="section-tag">Certifications &amp; Achievements</p>
-                    <h2>Recognition beyond the classroom.</h2>
-                </div>
-
-                <div class="timeline-card" style="margin-bottom: 1rem;">
-                    <div>
-                        <p class="timeline-label">Certification</p>
-                        <h3>Programming in Java — NPTEL · IIT Kharagpur</h3>
-                        <p style="margin-top:0.4rem; font-size:0.9rem; opacity:0.75;">Government-backed certification
-                            covering Java fundamentals, Object-Oriented Programming, and core CS concepts.</p>
-                    </div>
-                </div>
-
-                <div class="about-grid" style="margin-top: 1.5rem;">
-                    <div class="info-card">
-                        <p>🏆 Won multiple inter-college and school-level quiz competitions, demonstrating consistent
-                            performance under time pressure and in competitive environments.</p>
-                    </div>
-                    <div class="info-card">
-                        <p>👥 Led multiple project teams in college initiatives, managing planning, task delegation, and
-                            on-time delivery.</p>
-                    </div>
-                    <div class="info-card">
-                        <p>🤝 Active contributor to college tech communities, regularly organizing and participating in
-                            peer learning sessions and technical events.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="section contact-section">
-                <div class="section-heading">
-                    <p class="section-tag">Contact</p>
-                    <h2>Let's connect and build something meaningful.</h2>
-                </div>
-                <div class="contact-grid">
-                    <a class="contact-card" href="mailto:prajwalnavada74@gmail.com">
-                        <span>Email</span>
-                        <strong>prajwalnavada74@gmail.com</strong>
-                    </a>
-                    <a class="contact-card" href="https://www.linkedin.com/in/prajwal-navada-g-p-387891292/"
-                        target="_blank" rel="noreferrer">
-                        <span>LinkedIn</span>
-                        <strong>Prajwal Navada G P</strong>
-                    </a>
-                    <a class="contact-card" href="https://github.com/Nerdtrovert/" target="_blank" rel="noreferrer">
-                        <span>GitHub</span>
-                        <strong>@Nerdtrovert</strong>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="Prajwal_Navada_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                        Download Resume
                     </a>
                 </div>
-            </section>
-        </main>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img src="profile.jpg" alt="Prajwal Navada G P" loading="eager" />
+                </div>
+                <div class="floating-panel panel-top">
+                    <span>Currently Building</span>
+                    <strong>Full-Stack + TinyML systems on ESP32</strong>
+                </div>
+                <div class="floating-panel panel-bottom">
+                    <span>Focused On</span>
+                    <strong>Backend Systems · Edge AI · Real-Time Apps</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPOTLIGHT -->
+        <section class="section">
+            <div class="spotlight-grid">
+                <article class="spotlight-card">
+                    <span class="spotlight-label">BUILDS</span>
+                    <h3>Shipped across software + hardware</h3>
+                    <p>From real-time web systems to TinyML pipelines running fully on ESP32.</p>
+                </article>
+                <article class="spotlight-card">
+                    <span class="spotlight-label">FOUNDATION</span>
+                    <h3>Strong engineering fundamentals</h3>
+                    <p>Full-stack architecture, database design, real-time systems, and embedded optimization.</p>
+                </article>
+                <article class="spotlight-card">
+                    <span class="spotlight-label">OPPORTUNITIES</span>
+                    <h3>Looking for high-impact internships</h3>
+                    <p>Product engineering, IoT, Edge AI, and systems-focused teams.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-tag">About</p>
+                <h2>Engineering-focused builder with strong full-stack and Edge AI foundations.</h2>
+            </div>
+            <div class="spotlight-grid">
+                <article class="spotlight-card">
+                    <h3>Software + Hardware</h3>
+                    <p>Building across full-stack systems, real-time architecture, TinyML pipelines, and embedded IoT
+                        solutions.</p>
+                </article>
+                <article class="spotlight-card">
+                    <h3>Practical Engineering</h3>
+                    <p>Focused on production-grade systems, scalability, performance, and solving real operational
+                        problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <div class="section-heading">
+                <p class="section-tag">Education</p>
+                <h2>Strong academic foundation with hands-on project experience.</h2>
+            </div>
+            <article class="spotlight-card">
+                <h3>Dr. H.N. National College of Engineering</h3>
+                <p>Bachelor of Engineering in Computer Science & Engineering · Visvesvaraya Technological University</p>
+                <br>
+                <p>2024 – 2028 · CGPA: 9.2</p>
+            </article>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="section-tag">Projects</p>
+                <h2>Real systems. Real impact.</h2>
+            </div>
+            <div class="project-grid">
+
+                <article class="project-card featured-project">
+                    <div class="project-topline">
+                        <span class="project-badge">Featured</span>
+                        <span class="project-stack">ESP32 · TinyML · MQTT · ThingsBoard</span>
+                    </div>
+                    <h3>EdgeAI-Predict — TinyML Predictive Maintenance</h3>
+                    <p class="project-desc">
+                        Complete TinyML pipeline deployed directly on ESP32 for real-time anomaly detection using
+                        vibration and environmental data.
+                        Includes MQTT integration, ThingsBoard dashboards, trend prediction, and intelligent actuator
+                        control.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Nerdtrovert/" target="_blank" rel="noreferrer">GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured-project">
+                    <div class="project-topline">
+                        <span class="project-badge">Featured</span>
+                        <span class="project-stack">React · Node.js · MySQL · Firebase · PWA</span>
+                    </div>
+                    <h3>Auditorium Booking System</h3>
+                    <p class="project-desc">
+                        Role-based booking platform for 3 colleges with conflict detection, real-time notifications,
+                        cron automation, admin exports, and installable PWA support.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Nerdtrovert/" target="_blank" rel="noreferrer">GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-badge">Real-Time</span>
+                        <span class="project-stack">React · Socket.IO · MySQL · JWT</span>
+                    </div>
+                    <h3>QuizLive — Multiplayer Quiz Platform</h3>
+                    <p class="project-desc">
+                        Multiplayer quiz system with sub-100ms updates, normalized database architecture,
+                        JWT authentication, streak scoring, and anti-cheat mechanisms.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Nerdtrovert/quiz-platform" target="_blank" rel="noreferrer">GitHub
+                            →</a>
+                        <a href="https://qurio-nhol.onrender.com/" target="_blank" rel="noreferrer">Live Demo →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="section-tag">Skills</p>
+                <h2>Technologies I build with.</h2>
+            </div>
+            <div class="skill-categories">
+                <div class="skill-group">
+                    <p class="skill-group-label">Languages</p>
+                    <div class="skill-list">
+                        <span>Java</span><span>JavaScript</span><span>Python</span><span>C</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label">Frontend</p>
+                    <div class="skill-list">
+                        <span>React</span><span>Vite</span><span>PWA</span><span>FullCalendar.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label">Backend</p>
+                    <div class="skill-list">
+                        <span>Node.js</span><span>Express</span><span>Spring Boot</span><span>Socket.IO</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label">Embedded & Edge AI</p>
+                    <div class="skill-list">
+                        <span>ESP32</span><span>TinyML</span><span>MQTT</span><span>ThingsBoard</span><span>Sensor
+                            Fusion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements" class="section">
+            <div class="section-heading">
+                <p class="section-tag">Achievements</p>
+                <h2>Beyond academics and coursework.</h2>
+            </div>
+            <div class="spotlight-grid">
+                <article class="spotlight-card">
+                    <h3>NPTEL · IIT Kharagpur</h3>
+                    <p>Certified in Programming in Java covering OOP, Java fundamentals, and core CS concepts.</p>
+                </article>
+                <article class="spotlight-card">
+                    <h3>Leadership & Collaboration</h3>
+                    <p>Led multiple project teams with planning, delegation, and on-time delivery.</p>
+                </article>
+                <article class="spotlight-card">
+                    <h3>Competitive Problem Solving</h3>
+                    <p>Multiple inter-college and school-level quiz competition wins.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p class="section-tag">Contact</p>
+                <h2>Let's connect.</h2>
+            </div>
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:prajwalnavada74@gmail.com">
+                    <span>Email</span>
+                    <strong>prajwalnavada74@gmail.com</strong>
+                </a>
+                <a class="contact-card" href="https://www.linkedin.com/in/prajwal-navada-g-p-387891292/"
+                    target="_blank">
+                    <span>LinkedIn</span>
+                    <strong>Prajwal Navada G P</strong>
+                </a>
+                <a class="contact-card" href="https://github.com/Nerdtrovert/" target="_blank">
+                    <span>GitHub</span>
+                    <strong>@Nerdtrovert</strong>
+                </a>
+            </div>
+        </section>
 
         <footer>
-            <p>&copy; 2026 Prajwal Navada G P.</p>
+            <p>Built and designed by Prajwal Navada G P.</p>
         </footer>
     </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
